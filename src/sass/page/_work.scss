@@ -2,7 +2,7 @@
 .work {
     overflow-y: clip;
     position: relative;
-    margin-top: rem(-18);
+    margin-top: rem(-1);
     padding-top: rem(30);
     z-index: 1;
     padding-bottom: rem(146);
@@ -28,7 +28,9 @@
     width: 100%;
     z-index: -1;
 }
-
+.work__inner {
+    margin-top: rem(-17);
+}
 .work__title {
     max-width:rem(556);
     margin-left: auto;

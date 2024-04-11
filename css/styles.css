@@ -1000,6 +1000,7 @@ select::-ms-expand {
   padding-right: 90px;
   padding-right: 5.625rem;
   position: relative;
+  cursor: pointer;
 }
 
 .faqItem:nth-child(2) .faqItem__head,
@@ -1951,8 +1952,8 @@ select::-ms-expand {
 .work {
   overflow-y: clip;
   position: relative;
-  margin-top: -18px;
-  margin-top: -1.125rem;
+  margin-top: -1px;
+  margin-top: -0.0625rem;
   padding-top: 30px;
   padding-top: 1.875rem;
   z-index: 1;
@@ -1984,6 +1985,11 @@ select::-ms-expand {
   left: 0;
   width: 100%;
   z-index: -1;
+}
+
+.work__inner {
+  margin-top: -17px;
+  margin-top: -1.0625rem;
 }
 
 .work__title {
