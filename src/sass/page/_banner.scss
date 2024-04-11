@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.banner {
+    background: $color-theme;
+    margin-top: rem(-144);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: rem(150);
+}
+
+.banner__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: calc(200%);
+    gap: rem(8);
+}
+.banner__list--top {
+    animation: scroll_top 10s linear infinite;
+}
+.banner__list--bottom {
+    animation: scroll_bottom 10s linear infinite;
+}
+.banner__item {
+    flex: 0 0 rem(186);
+    flex-shrink: 0;
+    width: rem(186); 
+    height: auto; 
+    overflow: hidden; 
+}
+
+@keyframes scroll_top {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-60.5%); 
+    }
+}
+@keyframes scroll_bottom {
+    0% {
+        transform: translateX(-60.5%);
+    }
+    100% {
+        transform: translateX(-0%); 
+    }
+}
+.banner__list--top {
+}
+.banner__list--bottom {
+    margin-top: rem(15);
+}

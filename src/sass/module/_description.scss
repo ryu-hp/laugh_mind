@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.description {
+  font-feature-settings: "palt";
+  text-align: justify;
+  line-height: calc(48 / 28 );
+  font-weight: $normal;
+}

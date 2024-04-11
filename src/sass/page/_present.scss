@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.present {
+    background: $color-black;
+    position: relative;
+    margin-top: rem(-140);
+    padding-top: rem(144);
+    z-index: 1;
+}
+.present__inner {
+    box-sizing: border-box;
+    padding-left: 17px;
+    padding-right: 20px;
+}
+.present::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: rem(114);
+    width: 100%;
+    clip-path: polygon(0 0, 100% 100%, 100% 0%);
+    box-sizing: border-box;
+    background: $color-theme;
+    z-index: -1;
+}
+.present__title {
+    max-width:rem(549);
+    margin-left: auto;
+    margin-right: auto;
+}
+.present__body {
+    font-size: rem(28);
+    line-height: calc(48 / 28);
+    color: $color-white;
+    font-feature-settings: "palt";
+    margin-top: rem(40);
+    text-align: justify;
+    letter-spacing: 0.0423em;
+}
+.present__text--bottom {
+    margin-top: rem(12);
+}

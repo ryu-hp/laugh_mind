@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.contact {
+  position: relative;
+  overflow: clip;
+  padding-top: rem(27);
+  padding-bottom: rem(6);
+}
+.contact__inner {
+  text-align: center;
+  padding-left: rem(15);
+  padding-right: rem(15);
+}
+.contact__bgImage {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+.contact__btn {
+  display: inline-block;
+  max-width:rem(600);
+}

@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.flow {
+  background: $color-black;
+  padding-top: rem(39);
+  padding-bottom: rem(37);
+  position: relative;
+}
+.flow::after {
+  position: absolute;
+  // content: "";
+  display: block;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  border-bottom: rem(114) solid transparent;
+  border-left: 100vw solid $color-black;
+  box-sizing: border-box;
+}
+.flow__inner {
+  padding-left: rem(22.5);
+  padding-right: rem(22.5);
+}
+.flow__title {
+  max-width:rem(578.9039);
+  margin-left: auto;
+  margin-right: auto;
+}
+.flow__subTitle {
+  margin-top: rem(-4);
+}
+.flow__subTitle--text {
+  padding-left: rem(17);
+  padding-right: rem(16);
+}
+.flow__body {
+  margin-top: rem(51);
+}
+.flowItem {
+  position: relative;
+}
+.flowItem + .flowItem::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% + rem(15));
+  border-top: rem(35.0117) solid $color-theme;
+  border-left: calc(rem(140.6117) / 2) solid transparent;
+  border-right: calc(rem(140.6117) / 2) solid transparent;
+}
+.flowItem + .flowItem {
+  margin-top: rem(69);
+}

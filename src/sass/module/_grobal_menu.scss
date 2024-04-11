@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.grobal_menu {
+  margin-left: rem(641);
+  padding-left: rem(16);
+  padding-top: 1%;
+  position: relative;
+  z-index: 3;
+  @media screen and (min-width:841px) {
+    margin-left: calc(641 * 100vw / 841);
+  }
+}
+
+.grobal_menu__item a {
+  font-size: calc(16 * 100vw / 768);
+  font-weight: $bold;
+  padding: rem(12) rem(0);
+  display: block;
+  text-transform: uppercase;
+  color: $color-white;
+  text-shadow: 0 0 4px $color-black;
+  cursor: pointer;
+  position: relative;
+}
+.grobal_menu__item a::after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: $color-theme;
+  border-radius: 1px;
+  transform: scale(0);
+  left: 0;
+  bottom: rem(8);
+  transition: transform .3s ease;
+}
+.grobal_menu__item a:hover {
+  &::after {
+    transform: scale(100%);
+  }
+}

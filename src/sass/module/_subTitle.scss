@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.subTitle {
+    text-align: center;
+}
+.subTitle--text {
+    display: inline-block;
+    background: $color-theme;
+    color: $color-white;
+    font-size: rem(31);
+    font-weight: $bold;
+    line-height: 1;
+    padding-top: rem(8);
+    padding-bottom: rem(8);
+    padding-right: rem(25);
+    padding-left: rem(27);
+    font-feature-settings: "palt";
+    text-align: justify;
+    letter-spacing: 0.025em;
+}

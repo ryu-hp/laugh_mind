@@ -1,0 +1,79 @@
+@use "global" as *;
+.work {
+    overflow-y: clip;
+    position: relative;
+    margin-top: rem(-18);
+    padding-top: rem(30);
+    z-index: 1;
+    padding-bottom: rem(146);
+}
+.work::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: rem(114);
+    width: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% 0%);
+    box-sizing: border-box;
+    background: $color-black;
+    z-index: -1;
+}
+.work__bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.work__title {
+    max-width:rem(556);
+    margin-left: auto;
+    margin-right: auto;
+}
+.work__subTitle {
+    margin-top: rem(18);
+    padding-left: rem(1);
+}
+.work__subTitle--text {
+    padding-left: rem(33);
+    padding-right: rem(31);
+}
+.work__body {
+    margin-top: rem(36);
+    display: flex;
+    flex-wrap: wrap;
+    gap:rem(35) rem(8);
+    justify-content: center;
+}
+.work__item {
+    max-width: rem(298);
+    width: 100%;
+    text-align: center;
+}
+.work__head {
+    font-size: rem(40);
+    font-weight: $w8;
+    color: $color-theme;
+    margin-top: rem(18);
+    padding-left: rem(18);
+    text-align: left;
+    line-height: calc(48 / 40);
+    display: inline-block;
+    font-feature-settings: "palt";
+}
+.work__item:nth-child(n+3) .work__head{
+    margin-top: rem(14);
+}
+.work__item:not(:nth-child(n+4)) .work__head{
+    padding-left: rem(13);
+}
+.work__head--small {
+    letter-spacing: -0.04em;
+}
+.work__head--left-space {
+    margin-left: rem(16);
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 16.86">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: HiraKakuProN-W3-83pv-RKSJ-H, 'Hiragino Kaku Gothic ProN';
+        font-size: 12.35px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <g>
+      <circle class="cls-2" cx="7.5" cy="7.5" r="7.12"/>
+      <text class="cls-1" transform="translate(2.83 12.25)"><tspan x="0" y="0">C</tspan></text>
+    </g>
+  </g>
+</svg>

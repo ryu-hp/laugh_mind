@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.mv {
+    position: relative;
+    z-index: 1;
+}
+.mv__topText {
+    background: $color-theme;
+    text-align: center;
+    color: $color-white;
+    font-size: rem(33);
+    line-height: calc(42 / 33);
+    padding-top: rem(8);
+    padding-bottom: rem(8);
+    letter-spacing: 0.03em;
+    font-feature-settings: "palt";
+}

@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.footer {
+  background: $color-theme;
+  padding-top: rem(6);
+  padding-bottom: rem(6);
+}
+.footer__inner {
+  padding-left: rem(20);
+  padding-right: rem(20);
+}
+.footer__copy {
+  font-size: rem(18);
+  font-weight: $normal;
+  color: $color-white;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-self: start;
+}
+.footer__copy--mark {
+  max-width:rem(15);
+  width: 100%;
+  padding-top: rem(2);
+}
+.footer__copy--text {
+  margin-left: rem(1);
+}
