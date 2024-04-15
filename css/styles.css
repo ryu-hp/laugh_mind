@@ -282,7 +282,21 @@ select::-ms-expand {
 }
 
 .main_wrapper {
-  background: #f1b6cf;
+  position: relative;
+}
+
+.main_wrapper__bg_image {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.main_wrapper__bg_image img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .nav_wrapper {
@@ -1309,7 +1323,6 @@ select::-ms-expand {
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
 }
-
 .point {
   margin-top: -120px;
   margin-top: -7.5rem;
@@ -2068,5 +2081,208 @@ select::-ms-expand {
 .work__head--left-space {
   margin-left: 16px;
   margin-left: 1rem;
+}
+
+.contact_page {
+  padding-top: 80px;
+  padding-top: 5rem;
+  padding-bottom: 80px;
+  padding-bottom: 5rem;
+  min-height: calc(100vh - 1.92869rem);
+  background: #000;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .contact_page {
+    padding-top: 5.625rem;
+    padding-bottom: 5.625rem;
+  }
+}
+
+.contact_page__title {
+  font-size: 32px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact_page__body {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+
+.wpcf7 {
+  padding: 0;
+  background: transparent;
+  margin: 0 !important;
+  border: none;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.form-item {
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
+.form-item--first {
+  margin-top: 0;
+}
+
+.form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  gap: 1rem;
+}
+
+.form-item__label {
+  width: 100%;
+}
+
+.form-item__label--category {
+  font-size: 16px;
+  font-size: 1rem;
+  display: inline-block;
+  background: #E71E79;
+  border-radius: 1.25rem;
+  margin-left: 8px;
+  margin-left: 0.5rem;
+  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
+}
+
+.wpcf7-form-control-wrap {
+  width: 100%;
+  margin-left: auto;
+}
+
+.form-item__inputArea--radio .wpcf7-form-control-wrap {
+  width: 100%;
+  margin-left: auto;
+}
+
+.form-item__inputArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  gap: 0.5rem;
+  width: 100%;
+  margin-left: auto;
+}
+
+.form-item__input {
+  display: block;
+  background: #fff;
+  border: 1px solid #ADADAD;
+  width: 100%;
+}
+
+.form-item__input input {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.form-item__input--radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px 24px;
+  gap: 1rem 1.5rem;
+  background: transparent;
+  border: none;
+}
+
+.form-item__input--radio .wpcf7-list-item {
+  margin: 0 !important;
+  display: block;
+  width: 100%;
+}
+
+.form-item__inputArea--radio {
+  width: 100%;
+}
+
+.wpcf7 input[type=radio],
+.wpcf7 input[type=checkbox] {
+  display: none;
+}
+
+.wpcf7-list-item-label {
+  padding-left: 24px;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.wpcf7-list-item-label::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  width: 1rem;
+  height: 16px;
+  height: 1rem;
+  background: #fff;
+  left: 0;
+}
+
+.form-item__input--radio input:checked + .wpcf7-list-item-label::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 12px;
+  width: 0.75rem;
+  height: 12px;
+  height: 0.75rem;
+  background: #E71E79;
+  border-radius: 0.125rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 50%;
+  left: 2px;
+  left: 0.125rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.form-item--submit {
+  text-align: center;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
+.form-item__input--submit {
+  color: #fff;
+  border: 1px solid #E71E79;
+  background: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+  font-size: 1.5rem;
+  width: auto;
+  display: inline-block;
+  padding: 8px 0;
+  padding: 0.5rem 0;
+  border-radius: 3.75rem;
+  max-width: 180px;
+  max-width: 11.25rem;
+  width: 100%;
+}
+
+.form-item__input--submit:hover {
+  background: #E71E79;
 }
 /*# sourceMappingURL=styles.css.map */

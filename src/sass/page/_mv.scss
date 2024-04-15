@@ -14,4 +14,7 @@
     padding-bottom: rem(8);
     letter-spacing: 0.03em;
     font-feature-settings: "palt";
+    @include mq(md) {
+        
+    }
 }

@@ -1,7 +1,18 @@
 @use "global" as *;
 
 .main_wrapper {
-  background: rgba($color: #f1b6cf, $alpha:1);
+  position: relative;
+}
+.main_wrapper__bg_image {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+.main_wrapper__bg_image img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 .nav_wrapper {
   display: none;
