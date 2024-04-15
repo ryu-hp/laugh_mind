@@ -36,7 +36,7 @@
     margin-left: 0;
   }
   @media screen and (min-width:643px) {
-    border: 1px solid $color-theme;
+    box-shadow: rem(0) rem(0) rem(20) rgba($color: $color-white, $alpha: 1.0);
   }
   @media screen and (min-width:841px) {
     margin-left: auto;

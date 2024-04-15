@@ -51,7 +51,7 @@
           <a href="#faq">q&a</a>
         </li>
         <li class="grobal_menu__item">
-          <a href="#contact">contact</a>
+          <a href="<?php echo esc_url(home_url('/contact'))?>">contact</a>
         </li>
       </ul>
     </div>
@@ -696,7 +696,10 @@
           <img src="<?php echo esc_url(get_theme_file_uri('/images/common/company_bg.webp')); ?>" alt="背景">
         </div>
         <div class="contact__inner">
-          <a href="<?php echo esc_url(home_url('/contact'))?>" class="contact__btn">
+          <a href="<?php echo esc_url(home_url('/contact'))?>" class="contact__btn contact__btn--opacity-0">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/common/contact_btn.webp')); ?>" alt="LP制作・ご相談はこちらから">
+          </a>
+          <a href="<?php echo esc_url(home_url('/contact'))?>" class="contact__btn contact__btn--fixed">
             <img src="<?php echo esc_url(get_theme_file_uri('/images/common/contact_btn.webp')); ?>" alt="LP制作・ご相談はこちらから">
           </a>
         </div>

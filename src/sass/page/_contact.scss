@@ -22,4 +22,29 @@
 .contact__btn {
   display: inline-block;
   max-width:rem(600);
+  width: 100%;
+}
+.contact__btn--opacity-0 {
+  opacity: 0;
+  visibility: hidden;
+}
+.contact__btn--fixed {
+  position: fixed;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: rem(52);
+  @media screen and (min-width:641px) {
+    transform: translateX(0);
+    left: rem(20.5);
+  }
+  @media screen and (min-width:841px) {
+    left: auto;
+    right:calc(24vw + rem(20.5));
+  }
+  @media screen and (min-width:1440px) {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

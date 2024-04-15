@@ -332,7 +332,8 @@ select::-ms-expand {
 }
 @media screen and (min-width: 643px) {
   .sp_wrapper {
-    border: 1px solid #E71E79;
+    -webkit-box-shadow: 0rem 0rem 1.25rem white;
+            box-shadow: 0rem 0rem 1.25rem white;
   }
 }
 @media screen and (min-width: 841px) {
@@ -955,6 +956,43 @@ select::-ms-expand {
   display: inline-block;
   max-width: 600px;
   max-width: 37.5rem;
+  width: 100%;
+}
+
+.contact__btn--opacity-0 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contact__btn--fixed {
+  position: fixed;
+  z-index: 3;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 52px;
+  bottom: 3.25rem;
+}
+@media screen and (min-width: 641px) {
+  .contact__btn--fixed {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    left: 1.28125rem;
+  }
+}
+@media screen and (min-width: 841px) {
+  .contact__btn--fixed {
+    left: auto;
+    right: calc(24vw + 1.28125rem);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact__btn--fixed {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .faq {
@@ -2100,8 +2138,8 @@ select::-ms-expand {
 }
 
 .contact_page__title {
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 36px;
+  font-size: 2.25rem;
   text-align: center;
 }
 
@@ -2143,18 +2181,20 @@ select::-ms-expand {
 
 .form-item__label {
   width: 100%;
+  font-size: 32px;
+  font-size: 2rem;
 }
 
 .form-item__label--category {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   display: inline-block;
   background: #E71E79;
   border-radius: 1.25rem;
-  margin-left: 8px;
-  margin-left: 0.5rem;
-  padding: 4px 8px;
-  padding: 0.25rem 0.5rem;
+  margin-left: 16px;
+  margin-left: 1rem;
+  padding: 4px 16px;
+  padding: 0.25rem 1rem;
 }
 
 .wpcf7-form-control-wrap {
@@ -2182,11 +2222,8 @@ select::-ms-expand {
   background: #fff;
   border: 1px solid #ADADAD;
   width: 100%;
-}
-
-.form-item__input input {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 32px;
+  font-size: 2rem;
 }
 
 .form-item__input--radio {
@@ -2217,9 +2254,11 @@ select::-ms-expand {
 }
 
 .wpcf7-list-item-label {
-  padding-left: 24px;
-  padding-left: 1.5rem;
+  padding-left: 40px;
+  padding-left: 2.5rem;
   position: relative;
+  font-size: 32px;
+  font-size: 2rem;
 }
 
 .wpcf7-list-item-label::before {
@@ -2229,10 +2268,10 @@ select::-ms-expand {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 16px;
-  width: 1rem;
-  height: 16px;
-  height: 1rem;
+  width: 32px;
+  width: 2rem;
+  height: 32px;
+  height: 2rem;
   background: #fff;
   left: 0;
 }
@@ -2241,17 +2280,17 @@ select::-ms-expand {
   content: "";
   position: absolute;
   display: inline-block;
-  width: 12px;
-  width: 0.75rem;
-  height: 12px;
-  height: 0.75rem;
+  width: 24px;
+  width: 1.5rem;
+  height: 24px;
+  height: 1.5rem;
   background: #E71E79;
   border-radius: 0.125rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   top: 50%;
-  left: 2px;
-  left: 0.125rem;
+  left: 4px;
+  left: 0.25rem;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -2270,19 +2309,40 @@ select::-ms-expand {
   transition: all 0.3s ease;
   margin-left: auto;
   margin-right: auto;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 32px;
+  font-size: 2rem;
   width: auto;
   display: inline-block;
   padding: 8px 0;
   padding: 0.5rem 0;
   border-radius: 3.75rem;
-  max-width: 180px;
-  max-width: 11.25rem;
+  max-width: 240px;
+  max-width: 15rem;
   width: 100%;
 }
 
 .form-item__input--submit:hover {
   background: #E71E79;
+}
+
+.wpcf7-not-valid-tip {
+  color: red;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+.wpcf7-response-output {
+  padding: 16px 0px;
+  padding: 1rem 0rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+.screen-reader-response {
+  font-size: 24px;
+  font-size: 1.5rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
